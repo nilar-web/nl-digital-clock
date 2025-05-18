@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="images/nn.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body
+        class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen flex items-center justify-center p-4">
+        <div class="clock-container">
+            <div
+                class="clock-face bg-gray-800 rounded-2xl shadow-2xl p-8 border border-gray-700">
+                <!-- time Display -->
+                <div class="flex items-center justify-center mb-6">
+                    <div
+                        class="time-segment bg-gray-700 rounded-xl p-4 mx-1 shadow-lg">
+                        <span id="hours"
+                            class="text-6xl font-bold text-cyan-400 font-['Orbitron']">00</span>
+                    </div>
+                    <span
+                        class="colon text-5xl font-bold text-cyan-300 mx-1 font-['Orbitron']">:
+                    </span>
+                    <div
+                        class="time-segment bg-gray-700 rounded-xl p-4 mx-1 shadow-lg">
+                        <span id="minutes"
+                            class="text-6xl font-bold text-cyan-400 font-['Orbitron']">00</span>
+                    </div>
+                    <span
+                        class="colon text-5xl font-bold text-cyan-300 mx-1 font-['Orbitron']">:
+                    </span>
+                    <div
+                        class="time-segment bg-gray-700 rounded-xl p-4 mx-1 shadow-lg">
+                        <span id="seconds"
+                            class="text-6xl font-bold text-cyan-400 font-['Orbitron']">00</span>
+                    </div>
+                    <div class="ml-4 bg-cyan-600 rounded-xl p-3 shadow-lg">
+                        <span id="ampm"
+                            class="text-2xl font-bold text-white font-['Orbitron']">AM</span>
+                    </div>
+                </div>
+
+                <!-- Date Display -->
+                <div class="flex justify-center space-x-3 mt-6">
+                    <div
+                        class="date-item bg-gray-700 rounded-lg p-3 shadow-md flex flex-col items-center">
+                        <span
+                            class="text-xs text-gray-400 uppercase tracking-wider">Day</span>
+                        <span
+                            class="text-xl font-bold text-amber-400 font-['Orbitron']"
+                            id="day">Mon</span>
+                    </div>
+
+                    <div
+                        class="date-item bg-gray-700 rounded-lg p-3 shadow-md flex flex-col items-center">
+                        <span
+                            class="text-xs text-gray-400 uppercase tracking-wider">Date</span>
+                        <span
+                            class="text-xl font-bold text-amber-400 font-['Orbitron']"
+                            id="date">01</span>
+                    </div>
+
+                    <div
+                        class="date-item bg-gray-700 rounded-lg p-3 shadow-md flex flex-col items-center">
+                        <span
+                            class="text-xs text-gray-400 uppercase tracking-wider">Month</span>
+                        <span
+                            class="text-xl font-bold text-amber-400 font-['Orbitron']"
+                            id="month">Jan</span>
+                    </div>
+                    <div
+                        class="date-item bg-gray-700 rounded-lg p-3 shadow-md flex flex-col items-center">
+                        <span
+                            class="text-xs text-gray-400 uppercase tracking-wider">Year</span>
+                        <span
+                            class="text-xl font-bold text-amber-400 font-['Orbitron']"
+                            id="year">2024</span>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
